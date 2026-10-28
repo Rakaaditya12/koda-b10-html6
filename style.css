@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 25px;
+  background: dodgerblue;
+  text-align: center;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 12px;
+  display: inline-block;
+}
+
+nav > div > .home {
+  position: relative;
+  right: 60px;
+}
+
+nav > div > .about {
+  position: relative;
+  right: 7px;
+}
+
+nav > div > .experience {
+  position: relative;
+  left: 37px;
+}
+
+nav > div > .contact {
+  position: relative;
+  left: 100px;
+}
+
+@media (width <= 640px) {
+  nav {
+    height: 150px;
+  }
+  nav a {
+    display: block;
+  }
+
+  nav > div > .home {
+    position: relative;
+    left: 15px;
+    top: 10px;
+  }
+  nav > div > .about {
+    position: relative;
+    left: 18px;
+    top: 35px;
+  }
+  nav > div > .experience {
+    position: relative;
+    top: 63px;
+  }
+  nav > div > .contact {
+    position: relative;
+    left: 27px;
+    top: 90px;
+  }
+}
